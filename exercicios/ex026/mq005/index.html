@@ -6,8 +6,9 @@
     <title>Exercício Media Query</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="changedSize()">
     <header>
         <h1>Meu Site</h1>
         <span id="imenu" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
@@ -26,8 +27,8 @@
         <article>
             <h2>Testando Media Queries</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto iure eveniet quam iste eum deserunt laboriosam unde, et autem reprehenderit odio officiis perspiciatis nisi. Doloremque eum quidem reiciendis tempore magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident veniam ut cumque hic aliquid, autem iure rem eum ipsam impedit enim obcaecati ullam corporis rerum. Quisquam veritatis aliquam ipsam optio!</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe voluptas alias, ut quae consectetur voluptatum dicta asperiores nihil quasi placeat ea dolores enim debitis corrupti corporis officiis id, exercitationem dignissimos? Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, consequuntur itaque excepturi necessitatibus ipsa quisquam similique est mollitia consectetur blanditiis pariatur. Est distinctio tenetur facilis atque vel voluptatibus sequi! Possimus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id porro ullam numquam officiis recusandae. Maiores non deleniti earum assumenda quae quos, incidunt velit dolorem architecto obcaecati inventore at ipsam veniam?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque impedit optio sint et obcaecati incidunt sapiente fugit, eveniet ratione unde aliquid iste harum quibusdam laborum adipisci nulla error vel voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi assumenda saepe officia reprehenderit a repellat corrupti, ducimus magni repudiandae tenetur, quod ipsa quisquam corporis quibusdam esse ut asperiores qui maiores! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat quibusdam quod non labore dolore vel at illo accusamus! Eligendi dicta minus molestiae provident sed! Error dolorem cum necessitatibus minima nulla?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe voluptas alias, ut quae consectetur voluptatum dicta asperiores nihil quasi placeat ea dolores enim debitis corrupti corporis officiis id, exercitationem dignissimos? Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, consequuntur itaque excepturi necessitatibus ipsa quisquam similique est mollitia consectetur blanditiis pariatur. Est distinctio tenetur facilis atque vel voluptatibus sequi! Possimus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id porro ullam numquam officiis recusandae. Maiores non deleniti earum assumenda quae quos, incidunt velit dolorem architecto obcaecati inventore at ipsam veniam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, enim. Voluptates necessitatibus debitis deleniti, qui, esse fugit maxime ipsa blanditiis minus voluptatibus dolor mollitia! Ullam atque odit quo aspernatur fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ad atque saepe perferendis veritatis voluptas nesciunt illum dolorum omnis alias aspernatur asperiores quaerat magnam, expedita amet. Rem accusamus nulla pariatur? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis doloribus, explicabo officiis autem rem consequuntur fugit dolorem magni praesentium maiores expedita hic, necessitatibus porro adipisci ex sit pariatur? Animi, vero?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque impedit optio sint et obcaecati incidunt sapiente fugit, eveniet ratione unde aliquid iste harum quibusdam laborum adipisci nulla error vel voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi assumenda saepe officia reprehenderit a repellat corrupti, ducimus magni repudiandae tenetur, quod ipsa quisquam corporis quibusdam esse ut asperiores qui maiores! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat quibusdam quod non labore dolore vel at illo accusamus! Eligendi dicta minus molestiae provident sed! Error dolorem cum necessitatibus minima nulla? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi minima excepturi blanditiis repellendus fuga vero incidunt delectus nihil eos officiis hic, suscipit maiores accusantium deleniti totam amet doloribus fugiat! Quasi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat necessitatibus illum praesentium et sed consequatur, in, ad saepe obcaecati possimus tenetur hic nesciunt laboriosam quasi molestiae voluptates eius magni debitis?</p>
         </article>
     </main>
     <script>
@@ -36,6 +37,14 @@
                 itens.style.display = 'none'
             } else {
                 itens.style.display = 'block'
+            }
+        }
+
+        function changedSize() {
+            if (window.innerWidth >= 992){
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
             }
         }
     </script>
