@@ -10,25 +10,43 @@
 
             display: flex;
             flex-flow: row wrap;
+            align-items: flex-start;
+            height: 450px;
         }
 
         div.item {
-            background-color: lightgreen;
+            background-color: lightcoral;
             border: 1px solid black;
             text-align: center;
             padding: 20px;
         }
 
-        div#i1 {
-            order: 1;
+        div#i2 {
+            align-self: auto;
+        }
+
+        div#i3 {
+            align-self: flex-start;
+        }
+
+        div#i4 {
+           align-self: flex-end; 
         }
 
         div#i5 {
-            order: -5;
+            align-self: center;
+        }
+
+        div#i6 {
+            align-self: stretch;
         }
 
         div#i7 {
-            order: 6;
+            align-self: flex-end;
+        }
+
+        div#i8 {
+            align-self: center;
         }
     </style>
 </head>
